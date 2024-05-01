@@ -1,0 +1,27 @@
+targets:
+  $default:
+
+    # Reducing sources makes the build slightly faster (some of these are required
+    # to exist in the default target).
+    sources:
+      - lib/**
+      - web/**
+      - pubspec.yaml
+      - lib/$lib$
+      - $package$
+    builders:
+      json_serializable|json_serializable:
+        generate_for:
+          - "lib/**/**.dart"
+          - "packages/**/**.dart"
+      build_web_compilers|entrypoint:
+        generate_for:
+          - web/**.dart
+        options:
+          compiler: dart2js
+        dev_options:
+          dart2js_args:
+            - --no-minify
+        release_options:
+          dart2js_args:
+            - -O4

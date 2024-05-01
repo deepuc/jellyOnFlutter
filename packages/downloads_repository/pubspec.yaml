@@ -1,0 +1,28 @@
+name: downloads_repository
+description: A repository that handles downloads related requests.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  authentication_repository:
+    path: ../authentication_repository
+  dio: ^5.4.3+1
+  downloads_api:
+    path: ../downloads_api
+  drift: ^2.17.0
+  jellyflut_models:
+    path: ../jellyflut_models
+  json_annotation: ^4.9.0
+  path_provider: ^2.1.3
+  permission_handler: ^11.3.1
+  remote_downloads_api:
+    path: ../remote_downloads_api
+  rxdart: ^0.27.7
+  sqlite_database:
+    path: ../sqlite_database
+
+dev_dependencies:
+  mocktail: ^1.0.3

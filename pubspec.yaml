@@ -1,0 +1,156 @@
+name: jellyflut
+description: Jellyfin client made with Flutter.
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 2.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+module:
+  androidX: true
+
+dependencies:
+  animated_fractionally_sized_box: ^2.0.1
+  animations: ^2.0.11
+  archive: ^3.4.10
+  audio_video_progress_bar: ^2.0.2
+  authentication_repository:
+    path: packages/authentication_repository
+  auto_route: ^5.0.4
+  blurhash_dart: ^1.2.1
+  cached_network_image: ^3.3.1
+  carousel_slider: ^4.2.1
+  community_material_icon: ^5.9.55
+  cupertino_icons: ^1.0.8
+  database_downloads_api:
+    path: packages/database_downloads_api
+  device_info_plus: ^10.1.0
+  dio: ^5.4.3+1
+  downloads_api:
+    path: packages/downloads_api
+  downloads_repository:
+    path: packages/downloads_repository
+  drop_shadow: ^0.1.0
+  easy_localization: ^3.0.6
+  easy_localization_loader: ^2.0.1
+  equatable: ^2.0.5
+  file_picker: ^8.0.2
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.5
+  flutter_colorpicker: ^1.0.3
+  flutter_native_splash: ^2.4.0
+  flutter_settings_ui: ^3.0.1
+  flutter_svg: ^2.0.10+1
+  fluttertoast: ^8.2.5
+  hydrated_bloc: ^9.1.5
+  intl: ^0.19.0
+  items_api:
+    path: packages/items_api
+  items_repository:
+    path: packages/items_repository
+  jellyfin_authentication_api:
+    path: packages/jellyfin_authentication_api
+  jellyfin_downloads_api:
+    path: packages/jellyfin_downloads_api
+  jellyflut_models:
+    path: packages/jellyflut_models
+  json_serializable: ^6.8.0
+  just_audio: ^0.9.37
+  live_tv_api:
+    path: packages/live_tv_api
+  live_tv_repository:
+    path: packages/live_tv_repository
+  music_player_api:
+    path: packages/music_player_api
+  music_player_repository:
+    path: packages/music_player_repository
+  octo_image: ^2.0.0
+  palette_generator: ^0.3.3+3
+  path_provider: ^2.1.3
+  permission_handler: ^11.3.1
+  photo_view: ^0.15.0
+  provider: ^6.1.2
+  reactive_forms: ^17.0.0
+  remote_downloads_api:
+    path: packages/remote_downloads_api
+  responsive_builder: ^0.7.0
+  rxdart: ^0.27.7
+  settings_repository:
+    path: packages/settings_repository
+  shared_preferences: ^2.2.3
+  shimmer: ^3.0.0
+  shu_epub:
+    git:
+      url: https://github.com/getBoolean/shu_epub.git
+      ref: main
+  sliver_tools: ^0.2.12
+  sqlite3_flutter_libs: ^0.5.21
+  sqlite_database:
+    path: packages/sqlite_database
+  streaming_api:
+    path: packages/streaming_api
+  streaming_repository:
+    path: packages/streaming_repository
+  subtitle: ^0.1.0
+  universal_io: ^2.2.2
+  url_launcher: ^6.2.6
+  users_api:
+    path: packages/users_api
+  users_repository:
+    path: packages/users_repository
+  uuid: ^4.4.0
+  wakelock_plus: ^1.2.4
+
+dependency_overrides:
+  audio_video_progress_bar: ^2.0.2
+  image: ^4.1.7
+  intl: ^0.19.0
+  analyzer: ^6.4.1
+  ffi: ^2.1.2
+  universal_html:
+    git:
+      url: https://github.com/juancastillo0/universal_html.git
+      ref: 5a079ea
+  path: ^1.9.0
+  package_info_plus: ^8.0.0
+
+dev_dependencies:
+  auto_route_generator: ^5.0.3
+  build_runner: ^2.3.2
+  build_web_compilers: ^4.0.10
+  dart_code_metrics: ^4.19.2
+  flutter_lints: ^3.0.2
+  flutter_test:
+    sdk: flutter
+  icons_launcher: ^2.1.7
+
+# The following section is specific to Flutter.
+flutter:
+  assets:
+    - img/
+    - img/icon/
+    - translations/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-Italic.ttf
+          style: italic
+        - asset: fonts/Poppins-Regular.ttf
+          style: normal
+    - family: HindMadurai
+      fonts:
+        - asset: fonts/HindMadurai-Regular.ttf
+          style: normal
+    - family: Quicksand
+      fonts:
+        - asset: fonts/Quicksand-Regular.ttf
+          style: normal
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true

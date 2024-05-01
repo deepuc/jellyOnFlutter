@@ -1,0 +1,14 @@
+name: remote_downloads_api
+description: The interface and models for remote downloads API
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  dio: ^5.4.3+1
+  rxdart: ^0.27.7
+
+dev_dependencies:
+  pedantic: ^1.11.1
